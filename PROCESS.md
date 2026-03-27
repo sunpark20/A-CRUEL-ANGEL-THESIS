@@ -1,6 +1,6 @@
 # 잔혹한 천사의 테제 — 오디오 리마스터링 작업 과정
 
-**최종 결과물:** `03_export/final_versionB_v1.3_lra3.6.mp4`
+**최종 결과물:** `03_export/final_versionB_v1.3_hardsub.mp4` (자막 포함 업로드본)
 **소스:** 유튜브 야외 라이브 폰 녹화 (Opus 128kbps lossy)
 
 ---
@@ -43,7 +43,12 @@
         ▼
 [ Phase 4: 영상 합산 ]
   00_source/로로원본.mp4 + final_versionB_v1.3_lra3.6.wav
-  → 03_export/final_versionB_v1.3_lra3.6.mp4  ✅ 최종
+  → 03_export/final_versionB_v1.3_lra3.6.mp4
+        │
+        ▼
+[ Phase 5: 자막 하드서브 ]
+  04_caption/subtitle_final.ass → 이미지 오버레이
+  → 03_export/final_versionB_v1.3_hardsub.mp4  ✅ 최종 업로드본
 ```
 
 ---
@@ -133,6 +138,29 @@ ffmpeg -i "00_source/로로원본.mp4" \
 
 ---
 
+## Phase 5: 자막 하드서브
+
+입력: `03_export/final_versionB_v1.3_lra3.6.mp4`
+스크립트: `04_caption/sync_lyrics.py`, `04_caption/gen_subtitle.py`
+자막: `04_caption/subtitle_final.ass` (Hiragino Kaku Gothic ProN, 일본어 38pt + 한국어 52pt)
+
+```bash
+# 자막 이미지 오버레이 방식 하드서브 (ffmpeg minimal 빌드 환경)
+ffmpeg -i 03_export/final_versionB_v1.3_lra3.6.mp4 \
+       -i 04_caption/p.png \
+       -filter_complex "overlay=0:0" \
+       -c:v libx264 -crf 18 -c:a copy \
+       03_export/final_versionB_v1.3_hardsub.mp4 -y
+```
+
+> ⚠️ 현재 시스템의 ffmpeg는 minimal 빌드로 `ass`/`subtitles` 필터 미지원.
+> `p.png`는 Python 렌더링 엔진으로 생성한 자막 오버레이 이미지(3840×2160).
+> ffmpeg full 빌드(`brew install ffmpeg`) 설치 시 `subtitles` 필터로 직접 하드서브 가능.
+
+**결과:** `03_export/final_versionB_v1.3_hardsub.mp4` (3840×2160 4K) ✅
+
+---
+
 ## 최종 파일 구조
 
 ```
@@ -150,7 +178,15 @@ A-Cruel-Angels-Thesis/
 ├── 02_mix/
 │   └── mix_versionB_v1.3.wav    # ✅ 최종 믹스 (Vocal +6 / Inst -1)
 ├── 03_export/
-│   └── final_versionB_v1.3_lra3.6.mp4  # ✅ 최종 결과물
+│   ├── final_versionB_v1.3_lra3.6.mp4  # 마스터링 완료본 (자막 없음)
+│   └── final_versionB_v1.3_hardsub.mp4 # ✅ 최종 업로드본 (4K + 자막)
+├── 04_caption/
+│   ├── sync_lyrics.py            # SRT 한국어 치환 스크립트
+│   ├── gen_subtitle.py           # 2줄 ASS 자막 생성 스크립트
+│   ├── subtitle_final.ass        # 최종 자막 파일
+│   ├── p.png                     # 자막 오버레이 이미지
+│   ├── small_out/                # 보조 SRT/가사
+│   └── NOTES.md                  # 자막 작업 상세 노트
 └── run_separation.sh             # 스템 분리 스크립트
 ```
 

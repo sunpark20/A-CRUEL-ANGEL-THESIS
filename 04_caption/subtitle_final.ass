@@ -1,0 +1,49 @@
+[Script Info]
+; Bilingual subtitle - Japanese (small) + Korean (normal)
+ScriptType: v4.00+
+PlayResX: 3840
+PlayResY: 2160
+ScaledBorderAndShadow: yes
+YCbCr Matrix: None
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Hiragino Kaku Gothic ProN,128,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,2.5,1,2,40,40,50,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.90,0:00:06.86,Default,,0,0,0,,{\fs90}残酷な天使のように\N{\fs128}잔혹한 천사처럼
+Dialogue: 0,0:00:08.52,0:00:17.90,Default,,0,0,0,,{\fs90}少年よ　神話になれ\N{\fs128}소년이여 신화가 되어라!
+Dialogue: 0,0:00:24.74,0:00:31.96,Default,,0,0,0,,{\fs90}青い風がいま\N{\fs128}푸른 바람이 지금 마음의 문을 두드려도
+Dialogue: 0,0:00:31.96,0:00:35.76,Default,,0,0,0,,{\fs90}胸のドアを叩いても\N{\fs128}오직 나만을 바라보며
+Dialogue: 0,0:00:35.76,0:00:39.88,Default,,0,0,0,,{\fs90}微笑んでるあなた\N{\fs128}미소짓는 당신
+Dialogue: 0,0:00:39.88,0:00:43.22,Default,,0,0,0,,{\fs90}そっとふれるもの\N{\fs128}살짝 느껴지는 것을
+Dialogue: 0,0:00:43.22,0:00:46.96,Default,,0,0,0,,{\fs90}もとめることに夢中で\N{\fs128}찾는 것에 열중해서
+Dialogue: 0,0:00:46.98,0:00:50.92,Default,,0,0,0,,{\fs90}運命さえまだ知らない\N{\fs128}운명도 아직 모르는
+Dialogue: 0,0:00:50.92,0:00:54.94,Default,,0,0,0,,{\fs90}いたいけな瞳\N{\fs128}가련한 눈동자
+Dialogue: 0,0:00:54.94,0:01:00.90,Default,,0,0,0,,{\fs90}だけどいつか気付くでしょう　その背中には\N{\fs128}그렇지만 언젠간 깨닫게 되겠지 그 등에는
+Dialogue: 0,0:01:02.98,0:01:08.96,Default,,0,0,0,,{\fs90}遥か未来　めざすための　羽根があること\N{\fs128}아득한 미래로 향하기 위한 날개가 있다는 것을
+Dialogue: 0,0:01:09.88,0:01:13.36,Default,,0,0,0,,{\fs90}残酷な天使のテーゼ\N{\fs128}잔혹한 천사의 테제
+Dialogue: 0,0:01:13.36,0:01:17.20,Default,,0,0,0,,{\fs90}窓辺からやがて飛び立つ\N{\fs128}이윽고 창가에서 날아올라
+Dialogue: 0,0:01:17.20,0:01:21.08,Default,,0,0,0,,{\fs90}ほとばしる熱いパトスで\N{\fs128}용솟음치는 뜨거운 열정으로
+Dialogue: 0,0:01:21.08,0:01:25.04,Default,,0,0,0,,{\fs90}思い出を裏切るなら\N{\fs128}추억을 배신한다면
+Dialogue: 0,0:01:25.04,0:01:28.04,Default,,0,0,0,,{\fs90}この宇宙(そら)を抱いて輝く\N{\fs128}이 우주를 품으며 빛나는
+Dialogue: 0,0:01:28.04,0:01:32.30,Default,,0,0,0,,{\fs90}少年よ　神話になれ\N{\fs128}소년이여 신화가 되어라!
+Dialogue: 0,0:01:48.70,0:01:54.60,Default,,0,0,0,,{\fs90}もしもふたり逢えたことに　意味があるなら\N{\fs128}혹시나 두 사람의 만남에 의미가 있다면
+Dialogue: 0,0:01:56.62,0:02:03.66,Default,,0,0,0,,{\fs90}私はそう　自由を知る　ためのバイブル\N{\fs128}나는 그래, 자유를 알기 위한 바이블
+Dialogue: 0,0:02:03.66,0:02:07.62,Default,,0,0,0,,{\fs90}残酷な天使のテーゼ\N{\fs128}잔혹한 천사의 테제
+Dialogue: 0,0:02:07.62,0:02:11.58,Default,,0,0,0,,{\fs90}悲しみがそしてはじまる\N{\fs128}슬픔이 그리고 시작된다
+Dialogue: 0,0:02:11.58,0:02:14.62,Default,,0,0,0,,{\fs90}抱きしめた命のかたち\N{\fs128}끌어안은 생명의 형태
+Dialogue: 0,0:02:14.62,0:02:18.66,Default,,0,0,0,,{\fs90}その夢に目覚めたとき\N{\fs128}그 꿈에 눈떴을 때
+Dialogue: 0,0:02:18.66,0:02:22.74,Default,,0,0,0,,{\fs90}誰よりも光を放つ\N{\fs128}누구보다도 빛을 발하는
+Dialogue: 0,0:02:22.74,0:02:25.48,Default,,0,0,0,,{\fs90}少年よ　神話になれ\N{\fs128}소년이여 신화가 되어라
+Dialogue: 0,0:02:25.48,0:02:33.36,Default,,0,0,0,,{\fs90}人は愛をつむぎながら　歴史をつくる\N{\fs128}사람은 사랑을 쌓아가며 역사를 만든다
+Dialogue: 0,0:02:33.36,0:02:41.14,Default,,0,0,0,,{\fs90}女神なんてなれないまま　私は生きる\N{\fs128}여신 따위는 될 수 없는 채로 나는 살아간다
+Dialogue: 0,0:02:41.14,0:02:44.78,Default,,0,0,0,,{\fs90}残酷な天使のテーゼ\N{\fs128}잔혹한 천사의 테제
+Dialogue: 0,0:02:44.78,0:02:48.70,Default,,0,0,0,,{\fs90}窓辺からやがて飛び立つ\N{\fs128}이윽고 창가에서 날아올라
+Dialogue: 0,0:02:48.70,0:02:52.68,Default,,0,0,0,,{\fs90}ほとばしる熱いパトスで\N{\fs128}용솟음치는 뜨거운 열정으로
+Dialogue: 0,0:02:52.68,0:02:55.80,Default,,0,0,0,,{\fs90}思い出を裏切るなら\N{\fs128}추억을 배신한다면
+Dialogue: 0,0:02:55.80,0:02:59.94,Default,,0,0,0,,{\fs90}この宇宙(そら)を抱いて輝く\N{\fs128}이 우주를 품으며 빛나는
+Dialogue: 0,0:02:59.94,0:03:04.52,Default,,0,0,0,,{\fs90}少年よ　神話になれ\N{\fs128}소년이여 신화가 되어라!
+Dialogue: 0,0:03:05.00,0:03:06.00,Default,,0,0,0,,{\fs90}ありがとうございます\N{\fs128}감사합니다
+Dialogue: 0,0:03:08.00,0:03:11.00,Default,,0,0,0,,{\fs90}あなたが乗るのよ\N{\fs128}네가 타는 거야.
