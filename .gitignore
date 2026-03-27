@@ -1,0 +1,21 @@
+# 오디오/영상 파일 (대용량)
+*.wav
+*.mp3
+*.aac
+*.flac
+*.ogg
+*.opus
+*.webm
+*.mp4
+*.m4a
+*.m4v
+
+# Python 가상환경
+.venv/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Claude Code 로컬 설정
+.claude/settings.local.json
